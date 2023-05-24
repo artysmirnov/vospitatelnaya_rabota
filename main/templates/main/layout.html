@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static "main/css/main.css" %}">
+    <title>
+    </title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="content">
+        <div class="header">
+            <div class="topline"></div>
+            <div class="rowheader">
+                <img class="mainlogo" src="http://iast-ksu.ru/upload/content/logo.png" alt="iast logo">
+                <h1>Воспитательная работа</h1>
+                <div class="addinfo">
+                    <p>8.30-16.00 Пн-Пт,
+                        8.30-13.30 Сб</p>
+                    <p>Телефон
+                        (4942) 49-80-40</p>
+                </div>
+            </div>
+            <div class="vkladki">
+                <div class="vkladka">
+                    <a href="">Мероприятия</a></div>
+                <div class="vkladka">
+                    <a href="">Студенческие организации</a></div>
+                <div class="vkladka">
+                    <a href="">Степендиаты</a></div>
+                <div class="vkladka">
+                    <a href="">Документы</a></div>
+                <div class="vkladka">
+                    <a href="">Контакты</a></div>
+            </div>
+        </div>
+        <div>
+            <h2>
+                {{ title }}
+            </h2>
+        </div>
+        {% block content %}
+        {% endblock %}
+    </div>
+    <div class="footer">
+        <a href="">VK</a>
+        <div class="footerinfo">
+            <p>Адрес: г. Кострома, ул. Дзержинского, 17, Главный корпус.</p>
+            <p>Телефон (4942) 49-80-40</p>
+            <p>E-mail: fast@ksu.edu.ru</p>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

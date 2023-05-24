@@ -1,0 +1,9 @@
+{% extends 'main/layout.html' %}
+{% block content %}
+    <h2>Мероприятия</h2>
+    <div class="full_post">
+    <div class="eventname"><h3>{{ post.title }}</h3></div>
+    <div class="maininfo">
+        <img src="{{ post.image }}" alt=""><p>{{ post.full_info }}</p></div>
+    </div>
+{% endblock %}

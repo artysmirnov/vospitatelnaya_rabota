@@ -1,0 +1,12 @@
+{% extends 'main/layout.html' %}
+{% block content %}
+    <h2>Мероприятия</h2>
+    {% for el in events %}
+        <div class="blockevent">
+            <div class="nameevent"><a href="{% url 'event-detail' el.id %}">{{ el.title }}</a></div>
+        <div class="summaryevent">{{ el.some_info }}</div>
+        <div class="datepubl">{{ el.date }}</div>
+        <div class="postimg"><img src="{{ el.image }}" alt=""></div>
+        </div>
+    {% endfor %}
+{% endblock %}
