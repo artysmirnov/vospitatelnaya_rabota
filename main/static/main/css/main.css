@@ -56,3 +56,16 @@ h2{
   align-items: center;
   justify-content: center;
 }
+.all_events{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.blockevent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nameevent{
+  position: relative;
+}
